@@ -2,6 +2,7 @@ import { Account, ec, hash, Contract, uint256, CallData, RpcProvider, InvokeFunc
 
 
 export type Addresses = {
+  Pkey: string;
   Argent: string;
   Braavos: string;
 }

@@ -10,11 +10,13 @@ async function main() {
 
   for (const pk of pkArr) {
     addressArr.push({
+      Pkey: pk,
       Argent: calculateArgentxAddress(pk),
       Braavos: calculateBraavosAddress(pk)
     });
   }
 
+  console.log(addressArr);
   fs.writeFileSync('addresses.txt', JSON.stringify(addressArr, null, 2));
 }
 
